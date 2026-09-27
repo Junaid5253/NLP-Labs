@@ -1,0 +1,116 @@
+--- PRE-TABLE PARAGRAPHS ---
+
+Theory-Assignment:1 
+Course:
+		 Information Security
+Submitted to: 
+Ma’am Ayesha
+
+Submitted by:
+		 Junaid Abdullah 
+Roll no:
+		 SP24-BDS-019
+Semester: 5th 
+ 
+Date: 13/03/2026
+Comsats University Islamabad
+Note:
+Some Mathematical steps are done in Rough work at the bottom of this document be sure to check them out for further information
+
+Question 01: Personalized Cipher Analysis
+Shift Value
+My Reg No: SP24-BDS-019
+Last two digits of Reg N0 = 19
+So, the Caesar Cipher shift = 19
+
+a) Encrypt the message
+
+
+Ciphertext
+LXVNKBMR FTMMXKL
+
+b) Complete Encryption Table
+
+c) Decryption
+Ciphertext:
+LXVNKBMR FTMMXKL
+Using shift −19
+
+Decrypted text:
+SECURITY MATTERS
+So, the encryption is verified correctly.
+
+d) Why Caesar Cipher is Insecure
+Caesar Cipher is insecure because it has a very small number of possible keys (only 25 shifts). An attacker can easily try all the shifts using a brute-force attack and quickly find the original message. It also keeps the same letter patterns, so attackers can use frequency analysis to guess common letters like E and T. Modern encryption algorithms such as AES and RSA use complex mathematical methods and very large keys, which makes them much more secure than Caesar Cipher.
+
+Question 02: Hashing & Integrity Scenario
+a) How a user verifies the downloaded file
+The user downloads the software update file.
+The company provides the SHA-256 hash of the original file.
+The user runs a hashing tool on the downloaded file.
+The tool generates the SHA-256 hash of the downloaded file.
+The user compares the generated hash with the official hash published by the company.
+If both hashes match, it means the file has not been modified and is authentic.
+
+b) How digital signatures prevent attackers
+A digital signature is created using the company’s private key. When a user downloads the file, the system verifies the signature using the company’s public key. If an attacker modifies the file or changes the hash, the digital signature verification will fail. This ensures that users only trust files that are signed by the legitimate company.
+
+c) If attacker changes one bit
+If even one bit of the file changes:
+The SHA-256 hash will change completely
+The new hash will not match the original hash
+The digital signature verification will fail
+This helps detect even very small modifications in the file.
+
+d) Verification process 
+When a user downloads a file, they first generate the hash of the downloaded file using the same hashing algorithm provided by the company. Then they compare this generated hash with the official hash published by the company. If both hashes match, it means the file has not been modified during download. After that, the user verifies the digital signature using the company's public key. If the signature is valid, the file is confirmed to be authentic and safe to install.
+
+Question 03: RSA Signature
+Roll number digits: 1 and 9
+Step 1: Calculate p and q
+
+a) Compute n
+
+b) Compute φ(n)
+
+
+
+
+
+
+
+c) Find private key d
+ 
+Note: 
+d=106 and k =3
+
+
+
+d) Sign the message hash
+
+
+
+
+
+
+
+
+
+
+
+e) Verify the signature
+
+Note: The RSA fails because p and q should be prime numbers but in this case they are not
+
+
+
+
+Question 04: Cyber Security Scenario
+a) Violated Security Principles
+
+--- TABLE DATA ---
+
+Incident | Security Principle Violated
+Records copied by attackers | Confidentiality
+Prescriptions modified | Integrity
+Portal stopped working | Availability
